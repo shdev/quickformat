@@ -1,0 +1,63 @@
+.dir {
+	a {
+		&:before {
+			font-family: 'Glyphicons Halflings';
+			content : "\e118";
+			display: inline-block;
+			width : 2em;
+		}
+	}
+}
+.file {
+	a {
+		&:before {
+			font-family: 'Glyphicons Halflings';
+			content : "\e022";
+			display: inline-block;
+			width : 2em;
+		}
+	}
+}
+
+
+.checklist {
+	.well {
+		ul {
+			padding-left: 2.5em;
+			li {
+				position: relative;
+				list-style:none;
+				line-height: 2em;
+				margin-top:0.5em;
+				margin-bottom:0.5em;
+				&:before {
+					font-family: 'Glyphicons Halflings';
+					line-height: 1.7em;
+					text-align: center;
+					content:" ";
+					display: block;
+					position: absolute;
+					height:1.7em;
+					width:1.7em;
+					border-radius: 3px;
+					border-width: 2px;
+					border-style:solid;
+					border-color:black;
+					left:-2.5em;
+					top:0.15em;
+				}
+				&.checked {
+					&:before {
+						content:"\e013";
+					}
+				}
+			}
+		}
+	}
+}
+
+@media print {
+	.well {
+		border-style:none;
+	}
+}

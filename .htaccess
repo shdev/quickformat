@@ -1,0 +1,10 @@
+RewriteEngine On
+RewriteBase /~sebastian-holtz/quickformat
+
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteRule ^ index.php [QSA,L]
+RewriteRule ^(\..*?|js|css|fonts|index.php)($|/) - [L]
+#RewriteRule (*\.(md|markdown))$ index.php?filename=$1 [L]
+RewriteRule ^(.*?)$ index.php?filename=$1 [L]
+#RewriteRule ^ .cmds/index.php [L]
+
