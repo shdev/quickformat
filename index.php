@@ -5,7 +5,8 @@ $basedir = "/~sebastian-holtz/quickformat/";
 if (is_file("files/".$_GET['filename'])) {
 	
 	$h1 = $_GET['filename'];
-	
+	$destfile = $basedir.$_GET['filename'];
+	$destdir = dirname($destfile);
 	include("header.inc");
 	?>
 	<div class="well">
