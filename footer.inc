@@ -7,9 +7,11 @@
 			function toggleChecklistView() {
 				$('#maincontainer').toggleClass('checklist');
 				$('.checklist .well li').off('click').click(function (e) {
-					console.debug(e);
-					console.debug(e.target);
-					$(e.target).toggleClass('checked');
+					var elem = $(e.target);
+					if (elem.is("li")) {
+						$(e.target).toggleClass('checked');
+					}
+					return false;
 				});
 			}
 		</script>
