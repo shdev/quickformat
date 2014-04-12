@@ -12,7 +12,7 @@
 		<meta name="apple-mobile-web-app-status-bar-style" content="black">
 		<META HTTP-EQUIV="content-type" CONTENT="text/html; charset=utf-8">
 	</head>
-	<body style="padding-top : 90px">
+	<body style="padding-top : 90px" = class="<?= $globalClass ?>">
 		<div class="navbar navbar-inverse navbar-fixed-top" >
 			<div class="container "> 
 				<div class="navbar-header">
@@ -21,8 +21,8 @@
 
 				<?php if (isset($h1)) :  ?>
 						<ul class="nav navbar-nav">
-							<li><a href="<?= $destdir ?>"><span class="glyphicon glyphicon-chevron-up"></span></a></li>
-							<li><a href="javascript:toggleChecklistView()"><span class="glyphicon glyphicon-check"></span></a></li>
+							<li class="up-button"><a href="<?= $destdir ?>"><span class="glyphicon glyphicon-chevron-up"></span></a></li>
+							<li class="checklist-button"><a href="javascript:toggleChecklistView()"><span class="glyphicon glyphicon-check"></span></a></li>
 						</ul>
 						<p class="navbar-text"><?= $h1; ?></p>
 				<?php endif; ?>

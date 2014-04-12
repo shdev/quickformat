@@ -1,17 +1,18 @@
-.dir a:before {
-  font-family: 'Glyphicons Halflings';
-  content: "\e118";
-  display: inline-block;
-  width: 2em; }
-
-.file a:before {
-  font-family: 'Glyphicons Halflings';
-  content: "\e022";
-  display: inline-block;
-  width: 2em; }
+body.dir .checklist-button {
+  display: none; }
 
 .checklist .well ul {
   padding-left: 2.5em; }
+  .checklist .well ul .dir a:before {
+    font-family: 'Glyphicons Halflings';
+    content: "\e118";
+    display: inline-block;
+    width: 2em; }
+  .checklist .well ul .file a:before {
+    font-family: 'Glyphicons Halflings';
+    content: "\e022";
+    display: inline-block;
+    width: 2em; }
   .checklist .well ul li {
     position: relative;
     list-style: none;
@@ -20,13 +21,13 @@
     margin-bottom: 0.5em; }
     .checklist .well ul li:before {
       font-family: 'Glyphicons Halflings';
-      line-height: 1.7em;
+      line-height: 1.8em;
       text-align: center;
       content: " ";
       display: block;
       position: absolute;
-      height: 1.7em;
-      width: 1.7em;
+      height: 2em;
+      width: 2em;
       border-radius: 3px;
       border-width: 2px;
       border-style: solid;

@@ -1,10 +1,11 @@
 <?php
 
 $basedir = "/~sebastian-holtz/quickformat/";
-
+$globalClass = "";
 if (is_file("files/".$_GET['filename'])) {
 	
 	$h1 = $_GET['filename'];
+	$globalClass = "file";
 	$destfile = $basedir.$_GET['filename'];
 	$destdir = dirname($destfile);
 	include("header.inc");
@@ -26,6 +27,7 @@ if (is_file("files/".$_GET['filename'])) {
 	if (is_dir("files/".$_GET['filename']) && $_GET['filename'] != '') {
 		$addir = $_GET['filename'].'/';
 		$h1 = $_GET['filename'];
+		$globalClass = "dir";
 	}
 	$destfile = $basedir.$addir.$file;
 	$destdir = dirname($destfile);
