@@ -4,30 +4,32 @@ body.dir .checklist-button {
 	display : none;
 }
 
+
+.nav-pills.nav-stacked{
+.dir {
+	a {
+		&:before {
+			font-family: 'Glyphicons Halflings';
+			content : "\e118";
+			display: inline-block;
+			width : 2em;
+		}
+	}
+}
+.file {
+	a {
+		&:before {
+			font-family: 'Glyphicons Halflings';
+			content : "\e022";
+			display: inline-block;
+			width : 2em;
+		}
+	}
+}}
+
 .checklist {
 	.well {
 		ul {
-			.dir {
-				a {
-					&:before {
-						font-family: 'Glyphicons Halflings';
-						content : "\e118";
-						display: inline-block;
-						width : 2em;
-					}
-				}
-			}
-			.file {
-				a {
-					&:before {
-						font-family: 'Glyphicons Halflings';
-						content : "\e022";
-						display: inline-block;
-						width : 2em;
-					}
-				}
-			}
-			
 			padding-left: 2.5em;
 			li {
 				position: relative;
